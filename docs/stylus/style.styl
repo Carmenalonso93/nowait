@@ -48,7 +48,6 @@ body
 .header-container
     width: 100%
     height: 600px
-    background-image: url('../img/home-background.jpg')
     background-size: cover
     background-position: center
     position: relative
@@ -86,7 +85,25 @@ body
             margin-top: 16px
             font-weight: 600
             text-align: center
-            
+
+    &.home-header-container
+        background-image: url('../img/home-background.jpg')
+
+    &.wagamama-header-container
+        background-image: url('../img/r2-background.png')
+        background-position: 50% 0%
+
+    &.ginos-header-container
+        background-image: url('../img/r1-background.jpg')
+
+    &.ocafu-header-container
+        background-image: url('../img/r3-background.jpg')
+        background-position: 50% 10%
+
+    &.vips-header-container
+        background-image: url('../img/r4-background.jpg')
+    
+
 .search-container
     margin-top: -70px
     z-index: 3
@@ -249,6 +266,68 @@ body
             margin-bottom: 8px
 
 
+.restaurant-container
+    margin-top: -64px
+    margin-bottom: 32px
+    position: relative
+    z-index: 2
+
+    .restaurant-waiting-container
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+
+        .restaurant-waiting-title
+            color: $grey
+            font-size: 32px
+            margin-bottom: 16px
+            line-height: 38px
+            text-transform: capitalize
+
+        .restaurant-waiting-time
+            font-size: 42px
+            color: $red
+            font-weight: 700
+
+        .restaurant-waiting-icon img
+            width: 80px
+            height: 80px
+
+.restaurant-details-container
+    .restaurant-details-content
+        margin-bottom: 64px
+
+    .restaurant-details-title
+        font-size: 28px
+        border-bottom: 1px solid $light-grey
+        margin-bottom: 16px
+        padding-bottom: 16px
+
+    .restaurant-details-text
+        color: $grey
+
+        
+
+
+.restaurant-details-contact-container
+    margin-top: 24px
+    margin-bottom: 24px
+
+    .restaurant-details-contact-item
+        display: flex
+        align-items: center
+        margin-top: 16px
+
+        .restaurant-details-contact-icon
+            display: flex
+            margin-right: 12px
+
+        .restaurant-details-contact-text
+            text-decoration: none
+
+       
+
+
 @media screen and (max-width: 991px) 
 
     .page-padding
@@ -316,10 +395,47 @@ body
             text-align: center
 
 
+
+.restaurant-header-container
+    height: 400px
+
+
+.restaurant-container
+    .restaurant-waiting-container
+        .restaurant-waiting-title
+            font-size: 24px
+            margin-bottom: 8px
+
+         .restaurant-waiting-time
+            font-size: 32px
+
+        .restaurant-waiting-icon img
+            width: 60px;
+            height: 60px;
+
+
+.restaurant-details-container
+    .restaurant-details-title
+        font-size: 24px
+
 @media screen and (max-width: 425px) 
     .page-padding
         padding-left: 16px
         padding-right: 16px
+
+    .restaurant-container
+        .restaurant-waiting-container
+            .restaurant-waiting-title
+                font-size: 20px
+                margin-bottom: 8px
+
+            .restaurant-waiting-time
+                font-size: 28px
+
+            .restaurant-waiting-icon img
+                width: 40px;
+                height: 40px;
+
 
 @media screen and (max-width: 375px) 
      .search-container
